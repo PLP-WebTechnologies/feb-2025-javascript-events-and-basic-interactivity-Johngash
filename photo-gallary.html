@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallary</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Provide URL for 5 pictures</h1>
+    <form id="photo-url" class="login-form">
+        <label for="photo1">Enter 1st photo</label>
+        <input type="text" name="photo1" id="photo1" required>
+        <label for="photo2">Enter 2nd photo</label>
+        <input type="text" name="photo2" id="photo2" required>
+        <label for="photo3">Enter 3rd photo</label>
+        <input type="text" name="photo3" id="photo3" required>
+        <label for="photo4">Enter 4th photo</label>
+        <input type="text" name="photo4" id="photo4" required>
+        <label for="photo5">Enter 5th photo</label>
+        <input type="text" name="photo5" id="photo5" required><br>
+        <input type="submit" name="submit" id="submit-url">
+    </form>
+    <div id="photo-gallary" style="display: none;">
+        <div class="photo-container one" style="grid-area: one;"></div>
+        <div class="photo-container two" style="grid-area: two;"></div>
+        <div class="photo-container three" style="grid-area: three;"></div>
+        <div class="photo-container four" style="grid-area: four;"></div>
+        <div class="photo-container five" style="grid-area: five;"></div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
